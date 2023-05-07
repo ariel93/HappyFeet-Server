@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
-import ShoeRouter from './shoe/routes/shoe.router';
+import ShoeRouter from './shoe/controllers/shoe.controller';
 
 const port = 3000;
 const app = express();
