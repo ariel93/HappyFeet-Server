@@ -1,10 +1,14 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
+import cors from 'cors';
 import ShoeRouter from './shoe/controllers/shoe.controller';
 import UserRouter from './user/controllers/user.controller';
-const port = 3000;
+
+const port = 8080;
+
 const app = express();
+app.use(cors());
 app.use(bodyParser.json());
 
 // Database connection
